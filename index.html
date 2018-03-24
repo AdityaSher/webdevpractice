@@ -6,6 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
+
+  <style media="screen">
+    #sh {
+      background-color: rgb(157, 128, 30);
+      text-align: center;
+      padding: 20px 20px 20px 20px;
+    }
+  </style>
 </head>
 
 <body>
@@ -49,6 +57,26 @@
   <button type="button" name="button" onclick="document.getElementById('show-hide').style.display='none'">Hide</button>
 
   <button type="button" name="button" onclick="document.getElementById('show-hide').style.display='block'">Show</button>
+
+  <hr>
+
+  <p>Single button show and hide a division</p>
+  <button onclick="showhide()">Show-Hide</button>
+  <div id="sh">
+    See me dissapear!
+  </div>
+  <script>
+    function showhide() {
+      var x = document.getElementById("sh");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+  </script>
+
+<hr>
 
 
 
