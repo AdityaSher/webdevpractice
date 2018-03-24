@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <script type="text/javascript">
+  </script>
+
+  <h1>javascript code to display date on button click</h1>
+  <p>The date and time right now is</p>
+  <p id="yo"></p>
+  <button type="button" name="button" onclick="document.getElementById('yo').innerHTML=Date()">Click me to see time</button> /* javascript is very case sensetive and it doesnt consider stuff like this as comment! */
+
+  <hr>
+
+  <h1>Methods to Add and delete elements</h1>
+  <p id="change">Hello see me change</p>
+  <button type="button" name="button" onclick="document.getElementById('change').innerHTML='I just changed!'">Yo dood I am the changing button</button>
+
+  <button type="button" name="button" onclick="document.getElementById('change').innerHTML='Hello see me change'">Reset the above text</button>
+
+  <hr>
+  <img id="meme" src="resources/images/meme1.jpg" alt="Dood this is a meme">
+
+  <br>
+
+  <button type="button" name="button" onclick="document.getElementById('meme').src='resources/images/meme2.jpg'">Watch part 2 of this meme</button>
+
+  <button type="button" name="button" onclick="document.getElementById('meme').src='resources/images/meme1.jpg'">Watch part 1 of this meme</button>
+
+  <hr>
+  <p id=size>Watch me resize!</p>
+
+  <button type="button" name="button" onclick="document.getElementById('size').style.fontSize='2pc'">Change font size</button>
+
+  <button type="button" name="button" onclick="document.getElementById('size').style.fontSize='1pc'">Reset</button>
+
+  <hr>
+
+  <p id="show-hide">Think how you could use this!</p>
+
+  <button type="button" name="button" onclick="document.getElementById('show-hide').style.display='none'">Hide</button>
+
+  <button type="button" name="button" onclick="document.getElementById('show-hide').style.display='block'">Show</button>
+
+
+
+
+
+
+
+</body>
+
+</html>
